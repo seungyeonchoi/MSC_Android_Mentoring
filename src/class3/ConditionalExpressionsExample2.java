@@ -12,5 +12,12 @@ public class ConditionalExpressionsExample2
         }
         if(3!=3) // (조건식) 이 참이면 실행됩니다.
             System.out.println("\"3 is not 3\" is false ");
+
+        int num = 10;
+        if(num%2 == 0){
+            System.out.println(num+"는 짝수");
+        }else{
+            System.out.println(num+"는 홀수");
+        }
     }
 }

@@ -10,8 +10,8 @@ public class ConditionalExpressionsExample2
         else {
             System.out.println("flag is false\n");
         }
-        if(3!=3) // (조건식) 이 참이면 실행됩니다.
-            System.out.println("\"3 is not 3\" is false ");
+        if(5!=5) // (조건식) 이 참이면 실행됩니다.
+            System.out.println("\"5 is not 5\" is false ");
 
         int num = 10;
         if(num%2 == 0){

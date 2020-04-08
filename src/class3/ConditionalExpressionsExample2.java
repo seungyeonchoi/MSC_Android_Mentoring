@@ -2,6 +2,10 @@ package class3;
 
 public class ConditionalExpressionsExample2
 {
+    /*
+     * 3주차 - 조건 연산자 예제2
+     * if, else 문 사용하기
+     * */
     public static void main(String[] args) {
         Boolean flag = true;
         if(flag){

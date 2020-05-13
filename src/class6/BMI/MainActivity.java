@@ -1,8 +1,11 @@
 package com.scjun.junny.app_1301;
 
 
+import android.nfc.Tag;
+import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -17,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Log.i("lifecycle","onCreate");
         init();
     }
     public void init(){
@@ -48,5 +52,37 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        /*Log.i -> info 타입의 태그
+        첫 번째 tag 인자에는 어떤 태그로 검색될지에 대한 내용을 담는다.
+        두번째 msgm 인자에는 출력시킬 값을 담는다.
+         */
+        Log.i("lifecycle","onStart");
+    }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.i("lifecycle","onResume");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.i("lifecycle","onPause");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.i("lifecycle","onStop");
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.i("lifecycle","onRestart");
+    }
 }

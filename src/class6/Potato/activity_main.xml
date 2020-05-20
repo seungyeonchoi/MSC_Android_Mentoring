@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="2">
+        <ImageView
+            android:id="@+id/body"
+            android:src="@drawable/body"
+            android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView
+            android:id="@+id/arms"
+            android:src="@drawable/arms"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:visibility="invisible"/>
+        <ImageView
+            android:id="@+id/ears"
+            android:src="@drawable/ears"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:visibility="invisible"/>
+        <ImageView
+            android:id="@+id/eyebrows"
+            android:src="@drawable/eyebrows"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:visibility="invisible"/>
+        <ImageView
+            android:id="@+id/eyes"
+            android:src="@drawable/eyes"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:visibility="invisible"/>
+        <ImageView
+            android:id="@+id/glasses"
+            android:src="@drawable/glasses"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:visibility="invisible"/>
+        <ImageView
+            android:id="@+id/hat"
+            android:src="@drawable/hat"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:visibility="invisible"/>
+        <ImageView
+            android:id="@+id/mouth"
+            android:src="@drawable/mouth"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:visibility="invisible"/>
+        <ImageView
+            android:id="@+id/mustache"
+            android:src="@drawable/mustache"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:visibility="invisible"/>
+        <ImageView
+            android:id="@+id/nose"
+            android:src="@drawable/nose"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:visibility="invisible"/>
+        <ImageView
+            android:id="@+id/shoes"
+            android:src="@drawable/shoes"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:visibility="invisible"/>
+
+    </FrameLayout>
+    <GridLayout android:layout_width="wrap_content" android:layout_height="0dp"
+        android:layout_weight="1" android:rowCount="5" android:columnCount="2" android:layout_gravity="center">
+        <CheckBox
+            android:id="@+id/checkbox01"
+            android:text="arms" />
+        <CheckBox
+            android:id="@+id/checkbox02"
+            android:text="ears" />
+        <CheckBox
+            android:id="@+id/checkbox03"
+            android:text="eyebrows" />
+        <CheckBox
+            android:id="@+id/checkbox04"
+            android:text="eyes" />
+        <CheckBox
+            android:id="@+id/checkbox05"
+            android:text="glasses" />
+        <CheckBox
+            android:id="@+id/checkbox06"
+            android:text="hat" />
+        <CheckBox
+            android:id="@+id/checkbox07"
+            android:text="mouth" />
+        <CheckBox
+            android:id="@+id/checkbox08"
+            android:text="mustache" />
+        <CheckBox
+            android:id="@+id/checkbox09"
+            android:text="nose" />
+        <CheckBox
+            android:id="@+id/checkbox10"
+            android:text="shoes" />
+    </GridLayout>
+</LinearLayout>
+
+
+
+
+

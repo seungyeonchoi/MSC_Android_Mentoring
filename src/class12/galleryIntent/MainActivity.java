@@ -25,15 +25,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        imageView = (ImageView) findViewById(R.id.imageView);
-        initPermission();
+        imageView = (ImageView) findViewById(R.id.imageView);   //imageview 객체 생성
+        initPermission(); //permission 정보 확인 및 획득
     }
 
     public void onClick(View view) { //이미지 가져오기 버튼 눌렀을 떄 작동
-        Intent intent = new Intent(Intent.ACTION_PICK);
-        intent.setType(android.provider.MediaStore.Images.Media.CONTENT_TYPE);
+        Intent intent = new Intent(Intent.ACTION_PICK); //intent 타입으로 action_pick 설정
+        intent.setType(android.provider.MediaStore.Images.Media.CONTENT_TYPE);  //intent로 주고받을 데이터를 image데이터로 설정
         intent.setData(android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-        startActivityForResult(intent, SELECT_IMAGE);
+        startActivityForResult(intent, SELECT_IMAGE); //intent 넘겨주기
 
     }
 

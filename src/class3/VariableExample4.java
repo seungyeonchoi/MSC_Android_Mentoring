@@ -17,4 +17,5 @@ public class VariableExample4{
         // 콘솔 출력
         System.out.println(" d + f = " + f);
      }
+     
 }

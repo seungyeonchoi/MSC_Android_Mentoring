@@ -14,4 +14,5 @@ public class VariableExample1 {
         String str="Hello, MSC"; //문자열
         System.out.println("num: "+num+", c: "+c+", f: "+f+", d: "+d+", str: "+str);
     }
+    
 }

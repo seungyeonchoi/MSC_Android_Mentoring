@@ -5,6 +5,7 @@ public class VariableExample1 {
     * 3주차 - 변수와 상수 예제1
     * 각종 자료형 사용해보기
     */
+    
     public static void main(String[] args) {
         int num = 123; //4byte 정수형
         char c = 'a'; //2byte 문자형

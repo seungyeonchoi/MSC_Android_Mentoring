@@ -24,5 +24,4 @@ public class VariableExample3 {
         int mod = num % 2;
         System.out.println("mod: "+mod);
     }
-
 }

@@ -1,7 +1,7 @@
 package class3;
 
 public class ControlExpressionExample4 {
-    
+    public static void main(String[] args) {
         char grade='B';
         switch (grade)
         {

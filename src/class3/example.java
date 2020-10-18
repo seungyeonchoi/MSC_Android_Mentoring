@@ -9,7 +9,7 @@ public class test {
         float celcius = (float) ((5.0 / 9.0) * (fahrenheit - 32)); //문제에서 알려준 수식 구현
         //float으로 캐스팅해주지않으면 double형으로 계산 됨
         System.out.println("F: "+fahrenheit);
-        System.out.println("C: "+celcius);
+        System.out.println("C: "+String.format("%.3f", celcius));
 
         //문제 2
         char ch = 'z';
